@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Card Details</title>
+</head>
+<body>
+    <div class="card-components">
+        <div class="card-images">
+            <div class="card-front-image">
+                <img src="images/card-logo.svg" alt="logo" class="logo">
+                <div class="card-number">0000 0000 0000 0000</div>
+                <div class="card-info">
+                    <div class="card-name">Damain Scott</div>
+                    <div class="card-expiry-date">
+                        <p class="month-details">00</p>/
+                        <span class="year-details">00</span></div>
+                </div>
+            </div>
+            <div class="card-back-image">
+                <div class="card-cvc">000</div>
+            </div>
+        </div>
+
+        <div class="card-details">
+            <form action="#">
+                <div class="card-input-box">
+                    <label for="">cardholder name</label>
+                    <input type="text" id="name" placeholder="e.g. Damain Scott">
+                </div>
+                <div class="card-input-box">
+                    <label for="">card number</label>
+                    <input id="text" placeholder="e.g. 1234 5678 9123 0000">
+                </div>
+                <div class="card-input-box-3">
+                    <div class="date-block">
+                        <label for="">exp. date(mm/yy)</label>
+                        <div class="date-input">
+                            <input type="text" id="month" placeholder="MM" min="1" max="12">
+                            <input type="text" id="year" placeholder="YY">
+                        </div>
+                    </div>
+                    <div class="cvc-block">
+                        <label for="cvc">cvc</label>
+                        <input type="text" id="cvc" placeholder="e.g. 123">
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" id="button">Confirm</button>
+            </form>
+           
+            <div class="confirm">
+                <img src="images/icon-complete.svg" alt="">
+                <h1>thank you!</h1>
+                <p>We've added your card details</p>
+                <button class="btn">continue</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="dist/index.js"></script>
+</body>
+</html>
